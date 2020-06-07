@@ -5,7 +5,7 @@
   <title>Searchgoogle</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap'>
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/twbs/bootstrap@4.3/dist/css/bootstrap.css'><link rel="stylesheet" href="./style.css">
-
+<link rel="icon" href="img/arbuzu141000155.jpg" type="image/gif" sizes="30x30">
 </head>
 <body>
     
@@ -41,6 +41,33 @@
          <a href="pass.html">Tap here for Login</a> <br />
         <small>Designed by <a>Mr.A. Only for you...</a></small>
     </div>
+
+    <script>
+        document.onkeydown = function(e) {
+          if(event.keyCode == 123) {
+            console.log('You cannot inspect Element');
+             return false;
+          }
+          if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+            console.log('You cannot inspect Element');
+            return false;
+          }
+          if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+            console.log('You cannot inspect Element');
+            return false;
+          }
+          if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+            console.log('You cannot inspect Element');
+            return false;
+          }
+          if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+            console.log('You cannot inspect Element');
+            return false;
+          }
+        } 
+        // prevents right clicking
+        document.addEventListener('contextmenu', e => e.preventDefault());
+        </script>
 
   
 </body>

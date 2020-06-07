@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="30x30">
+    <link rel="icon" href="img/arbuzu141000155.jpg" type="image/gif" sizes="30x30">
     <title>Chatbox</title>
     <style>
       body{
@@ -20,7 +20,32 @@
 
   <h3></h3><!-- Start BawkBox Code--><script data-sil-id="5ed8a376224125001156246d">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/chatroom/5ed8a376224125001156246d?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script><div class="sil-widget-chatroom sil-widget" id="sil-widget-5ed8a376224125001156246d"><a href="//bawkbox.com/install/chatroom">Public Chatroom</a></div><!-- End BawkBox Code-->
 
-
+  <script>
+    document.onkeydown = function(e) {
+      if(event.keyCode == 123) {
+        console.log('You cannot inspect Element');
+         return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+        console.log('You cannot inspect Element');
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+        console.log('You cannot inspect Element');
+        return false;
+      }
+      if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+        console.log('You cannot inspect Element');
+        return false;
+      }
+      if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+        console.log('You cannot inspect Element');
+        return false;
+      }
+    } 
+    // prevents right clicking
+    document.addEventListener('contextmenu', e => e.preventDefault());
+    </script>
   
 
   

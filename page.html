@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="img/arbuzu141000155.jpg" type="image/gif" sizes="30x30">
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
@@ -280,6 +281,33 @@ function toggleFunction() {
     }
 }
 </script>
+
+<script>
+  document.onkeydown = function(e) {
+    if(event.keyCode == 123) {
+      console.log('You cannot inspect Element');
+       return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+      console.log('You cannot inspect Element');
+      return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+      console.log('You cannot inspect Element');
+      return false;
+    }
+    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+      console.log('You cannot inspect Element');
+      return false;
+    }
+    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+      console.log('You cannot inspect Element');
+      return false;
+    }
+  } 
+  // prevents right clicking
+  document.addEventListener('contextmenu', e => e.preventDefault());
+  </script>
 
 </body>
 </html>
