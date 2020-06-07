@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <style>
+         body{
+             background-color: rgba(25, 208, 214, 0.945);
+             opacity: 0.5;}
+        
+         
+        
+     </style>
+    </head>
+    <body>
+    
+    <form style="padding: 100px 100px;">
+        <hr>
+        <label for="pswd" id="passward"> <b> Enter your password: </b></label>
+        <input type="password" id="pswd" placeholder="Enter passward" style="padding: 5px 25px;"><br><br>
+        <input type="button" id="button" value="Submit" onclick="checkPswd();" />
+        <hr>
+    </form>
+    
+    
+    <!--Function to check password the already set password is admin-->
+    <script type="text/javascript">
+        function checkPswd() {
+            var confirmPassword = "friends";
+            var password = document.getElementById("pswd").value;
+            if (password == confirmPassword) {
+                 window.location="page.html";
+            }
+            else{
+                alert("Passwords do not match.");
+            }
+        }
+    </script>
+    </body>
+    </html>
