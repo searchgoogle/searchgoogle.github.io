@@ -1,399 +1,409 @@
-<!DOCTYPE html>
-<html>
-<title>MR. A</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" href="img/arbuzu141000155.jpg" type="image/gif" sizes="30x30">
-<style>
-  body {
-  
-  background-color: white;
-  color: black;
- 
-}
+<!doctype html>
+<html lang="en">
 
-.dark-mode {
-  background-color: black;
-  color: white;
-}
+  <head>
+    <title>LifeWays &mdash; The Chain Of Life</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=DM+Sans:300,400,700|Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css1/bootstrap.min.css">
+    <link rel="stylesheet" href="css1/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css1/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css1/owl.carousel.min.css">
+    <link rel="stylesheet" href="css1/owl.theme.default.min.css">
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="css1/aos.css">
 
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #777;
-  line-height: 1.8;
-}
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css1/style.css">
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  </head>
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('/w3images/parallax1.jpg');
-  min-height: 100%;
-}
-
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 400px;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
-}
-/*Dark made switch */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
-
-
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
- body {
-  
-  background-color: white;
-  color: black;
- 
-}
-
-.dark-mode {
-  background-color: black;
-  color: white;
-}
-
-</style>
-<body>
-  <!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-        <i class="fa fa-bars"></i>
- 
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="comment1.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-paper-plane"></i> COMMENTBOX</a>
-    <a href="https://searchgoogle.github.io/livechat/" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-snapchat"></i>livechat</a>
-    <a href="pass1.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-snapchat"></i> COMMENTBOX(ra)</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a>
-  </div>
-
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="comment1.html" class="w3-bar-item w3-button">COMMENTBOX</a>
-    <a href="https://searchgoogle.github.io/livechat/" class="w3-bar-item w3-button">livechat</a>
-    <a href="pass1.html" class="w3-bar-item w3-button">COMMENTBOX(ra)</a>
-    
-  </div>
-</div>
-
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-0.5" id="home" style="background-color: rgb(56, 25, 235);">
-
-  
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge  ">Lets' <span class="w3-hide-small"> Come</span>  Alive...</span>
-    
-  </div>
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
- <div style="color: deepskyblue;">Dark Mode Switch</div> 
-<!---DarkMode switch-->
-<label class="switch" >
-  <input type="checkbox" unchecked>
-  <span class="slider" onclick="myFunction1()"></span>
-</label>
-
-<!---Dark mode script-->
-<script>
-  function myFunction1() {
-     var element = document.body;
-     element.classList.toggle("dark-mode");
-  }
-</script>
- 
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I love My Hobbies My Dreams And My Passions...</em></p>
-  <p>My favourite things are to do interesting stuffswith some technology.I inspired by techinfo.love to live with friends.Enjoy my platinum time with them.Life stuck with maths and technology.Love my family and my bestfriends ever.like to dospend time with them.Always stay connected to them.Living a stuggling and a complicated life.Thinking always about my passions and dreams.I like to live with future innovations and thats all... <br>😉Welcome to my site.You can discover here new things.Make yourself creative.Here you can see my 📸photos🤳,📹Videos🎞,Contact me on any media.Here is commentbox box for Chats that replays long and also contain live chat option  for your convinience.Can found my newly-lunced sites.</p>
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <p><b><i class="fa fa-user w3-margin-right"></i>My Name</b></p><br>
-      <img src="img/20200305_213520.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300" height="300">
-    </div>
-
-<!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>😉Welcome to my site.You can discover here new things.Make yourself creative.Here you can see my 📸photos🤳,📹Videos🎞,Contact me on any media.Here is commentbox box for Chats that replays long and also contain live chat option  for your convinience.Can found my newly-lunced sites.</p>
-    </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">Im really like this:</p>
-  <p class="w3-wide"><i class="fa fa-camera"></i>Passion Following</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
-  </div>
-  <p class="w3-wide"><i class="fa fa-laptop"></i>Hobbies</p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
-  </div>
-  <p class="w3-wide"><i class="">Project making</i></p>
-  <div class="w3-light-grey">
-    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:95%">95%</div>
-  </div>
-</div>
-
-<!---Bartypehorizontal-->
-<div class="w3-row w3-center w3-dark-grey w3-padding-16">
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">24-01-2004</span><br>
-    @Born 
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">45 & going on</span><br>
-    Projects Done
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">22 & going on</span><br>
-    Pages with css
-  </div>
-  <div class="w3-quarter w3-section">
-    <span class="w3-xlarge">5 & going on</span><br>
-    Functions & Apps
-  </div>
-</div>
-
-<!---Feedback form-->
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-f9df3aca-84b7-4561-b0cd-36308dd44cb4"></div>
-
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-purple w3-wide">PORTFOLIO</span>
-  </div>
-</div>
-
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">Memories</h3>
-  <p class="w3-center"><em>Here are some of my best momeries pics.<br> Click on the images to make them bigger</em></p><br>
-
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="img/Screenshot (21).png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ganesha">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img/IMG201901071037477.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img/IMG20190107140114.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
-    </div>
-
-    <div class="w3-col m3">
-      <img src="img/IMG_20190107_135405_BURST002 - Copy.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="img/IMG_20190107_140717.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
-    </div>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
     
-    
-    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">Added soon...</button>
-  </div>
-</div>
+    <div class="site-wrap" id="home-section">
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-purple w3-wide">CONTACT</span>
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WHERE I LOCATE</h3>
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="img/map.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Maharashtra,India<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 7249384808<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: atharvathadve200424@gmail.com<br>
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
       </div>
-      
+
+
+
+      <header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container mb-3">
+          <div class="d-flex align-items-center">
+            <div class="site-logo mr-auto">
+              <a href="index.html">LIFEWAYS<span class="text-primary">...</span></a>
+            </div>
+            <div class="site-quick-contact d-none d-lg-flex ml-auto ">
+              <div class="d-flex site-info align-items-center mr-5">
+                <span class="block-icon mr-3"><span class="icon-map-marker text-yellow"></span></span>
+                <span>Bhokar, City Nanded,<br> Maharashtra, <br> India</span>
+              </div>
+              <div class="d-flex site-info align-items-center">
+                <span class="block-icon mr-3"><span class="icon-clock-o"></span></span>
+                <span>#23 JUN 2020<br> @Artical Written</span>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="menu-wrap d-flex align-items-center">
+            <span class="d-inline-block d-lg-none"><a href="#" class="text-black site-menu-toggle js-menu-toggle py-5"><span class="icon-menu h3 text-black"></span></a></span>
+
+              
+
+              <nav class="site-navigation text-left mr-auto d-none d-lg-block" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mr-auto ">
+                  <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                  <li><a href="about.html" class="nav-link">About</a></li>
+                  <li><a href="packages.html" class="nav-link">Gallery</a></li>
+                  <li><a href="gallery.html" class="nav-link">Livechat</a></li>
+                  <li><a href="pricing.html" class="nav-link">commentbox</a></li>
+                  <li><a href="contact.html" class="nav-link">Commentbox{AR}</a></li>
+                </ul>
+              </nav>
+
+              <div class="top-social ml-auto">
+                <a href="https://www.facebook.com/"><span class="icon-facebook text-teal"></span></a>
+                <a href="https://twitter.com/home"><span class="icon-twitter text-success"></span></a>
+                <a href="https://www.instagram.com/?hl=en"><span class="icon-instagram text-blue"></span></a>
+                <a href="https://youtu.be/xxRD2bXd8g8"><span class="icon-youtube text-red"></span></a>
+                <a href="#"><span class="icon-message text-yellow"></span></a>
+              </div>
+          </div>
+        </div>
+
+       
+
+      </header>
+
+    <div class="ftco-blocks-cover-1">
+       
+      <div class="site-section-cover overlay">
+        <div class="container">
+          <div class="row align-items-center ">
+            <div class="col-md-5 mt-5 pt-5">
+              <span class="text-cursive h5 text-red">A Grand welcome To My Website</span>
+              <h1 class="mb-3 font-weight-bold text-teal">Running chain of Lifes...</h1>
+              <p>Sharing my thoughts with you.</p>
+              <p>Through Yourself outside of this chain to be an Extraordinary...</p>
+              <p class="mt-5"><a href="#" class="btn btn-primary py-4 btn-custom-1">LIFEWAYS</a></p>
+            </div>
+            <div class="col-md-6 ml-auto align-self-end">
+              <img src="images/kid_transparent.png" alt="Image" class="img-fluid">
+              
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-</div>
 
-<!---Visiter count-->
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-4594b9f3-16ab-4e19-b640-a69771bb1c08"></div>
+    <div class="site-section">
+      <div class="container">
+        <div class="text">Hello ! <br>This is just the starting fun is behind the scene</div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <img src="images/227948-success-quote.jpg" alt="imges" class="img-fluid">
+        <img src="images/motivational-quotes-for-work-success-cool-inspirational-wallpaper-on-ego-and-talent-too-much-ego-will-kill-wallpaper-hd.png" alt="images" class="img-fluid">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="block-2 red">
+              <span class="wrap-icon">
+                <span class="icon-message"></span>
+              </span>
+              <h2>Birth</h2>
+              <p>The very first step of life that that every human get started without any pain, gain or aim... <br>But everyone didnt get the same position,place or condions </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="block-2 yellow">
+              <span class="wrap-icon">
+                <span class="icon-message"></span>
+              </span>
+              <h2>Life Space</h2>
+              <p>All that we suffer may bad orgood that is in life space.Many more oppertunities we get to achive the things.We can set our own goals, can set our way </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="block-2 teal">
+              <span class="wrap-icon">
+                <span class="icon-message"></span>
+              </span>
+              <h2>Death</h2>
+              <p>The point that we splash the things in faction of seconds.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <a href="https://www.facebook.com/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <a href="https://twitter.com/home"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-5 mb-md-0">
+            <img src="images/header.jpg" alt="Image" class="img-fluid">
+            <img src="images/121481.jpg" alt="Image" class="img-fluid">
+          </div>
+          <div class="col-md-5 ml-auto pl-md-5">
+            <span class="text-cursive h5 text-red">Disccusing about life space</span>
+            <h3 class="text-black">The chain of life that <b><i> we are living...</i></b></h3>
+            <p><span>If we think deeply about leaving of life.We can observe a thing which repeats to each human, to each traditin.That is the chain of life.I will clear you the idea of chin of life.Just observe the steps with getting started with birth of human still his death.Those steps are not observe in least of humans but applied to all that are living a simple and straight forward life. <br> We can classify the humans into two types <br>1.Simple leaving <br>2.Extraordinary humans <br>The Extraordinary class is somewhat special in society.But they never born they create themselfe to be Extraordinary...</span></p>
+
+            <p class="mt-5"><a href="#" class="btn btn-warning py-4 btn-custom-1">Let's think about the chain of Life</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
     
-    <a href="https://youtu.be/xxRD2bXd8g8"><i class="fa fa-youtube w3-hover-opacity"></i></a>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
     
-  </div>
-  <p>Powered by <b>Mr.A</b></p>
-</footer>
- 
-<script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+    <div class="site-section bg-info">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <span class="text-cursive h5 text-red d-block">The chain may contain following topics</span>
+            <h2 class="text-white">Mostly depends uopen us</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="package text-center bg-white">
+              <span class="img-wrap"><img src="images/flaticon/svg/001-jigsaw.svg" alt="Image" class="img-fluid"></span>
+              <h3 class="text-teal">Usual Trends</h3>
+              <p>The trends that we think in life.To be happy.To have money,To have prosperty and many more <br>We never think about to do something different.To break the things of traditions</p>
+              <p><a href="#" class="btn btn-primary btn-custom-1 mt-4">Read More</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="package text-center bg-white">
+              <span class="img-wrap"><img src="images/flaticon/svg/002-target.svg" alt="Image" class="img-fluid"></span>
+              <h3 class="text-success">Setting goals but nothing do to achive it</h3>
+              <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
+              <p><a href="#" class="btn btn-warning btn-custom-1 mt-4">Read More</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="package text-center bg-white">
+              <span class="img-wrap"><img src="images/flaticon/svg/003-mission.svg" alt="Image" class="img-fluid"></span>
+              <h3 class="text-danger">Thinking about success</h3>
+              <p>Lorem ipsum dolor sit amet. Consequatur aliquam, fuga maiores amet quo corporis distinctio soluta recusandae?</p>
+              <p><a href="#" class="btn btn-success btn-custom-1 mt-4">Read More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
-    }
-}
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="text-cursive h5 text-red d-block">My Age plan</span>
+            <h2 class="text-black">Age planing</h2>
+            <p>From my childhood I was thing that there must be a moment in my life shocks me and made me to get started to plan the life.But now I know that for what I'm waiting? Nothing like that moment never come in life .Form inside -out I realised that this is time to get started .There's nothing like any moment that we are fetching.Take any moment and begine.That right always.Bcoz waiting for right moments thats nothing but spending our time in it. </p>
+          </div>
+          <div class="col-md-4">
+            <div class="pricing teal">
+              <span class="price">
+                <span>15</span>
+              </span>
+              <h3>Platinum time to start</h3>
+              <ul class="ul-check list-unstyled teal">
+                <li>Setting life goals</li>  
+                <li>Exicuting pre-planing</li>
+                <li>Planing the plan</li>
+              </ul>
+              <p><a href="#" class="btn btn-teal btn-custom-1 mt-4">NOT LATE AT ALL</a></p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="pricing danger">
+              <span class="price">
+                <span>20</span>
+              </span>
+              <h3>Golden timimg to exicute</h3>
+              <ul class="ul-check list-unstyled danger">
+                <li>Changing the wrong plan</li>  
+                <li>Mistake improving</li>
+                <li>Focusing the ways that we mingled in it</li>
+              </ul>
+              <p><a href="#" class="btn btn-danger btn-custom-1 mt-4">NOT LATE</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="site-section bg-light">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-12 text-center">
+            <span class="text-cursive h5 text-red d-block">Personal thoughts</span>
+            <h2 class="text-black">What my HEART Says About LIFEWAYS</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="testimonial-3-wrap">
+              
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+              <div class="owl-carousel nonloop-block-13">
+                <div class="testimonial-3 d-flex">
+                  <div class="vcard-wrap mr-5">
+                    <img src="images/download.jpg" alt="Image" class="vcard img-fluid">
+                  </div>
+                  <div class="text">
+                    <h3>Failed Plan</h3>
+                    <p class="position">Thoughts</p>
+                    <p>If any plan doesnt' work then change the plan but <i>never the goal</i></p>
+                  </div>
+                </div>
 
-<!---Script for Inspector-->
-<script>
-  document.onkeydown = function(e) {
-    if(event.keyCode == 123) {
-      console.log('You cannot inspect Element');
-       return false;
-    }
-    if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-      console.log('You cannot inspect Element');
-      return false;
-    }
-    if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-      console.log('You cannot inspect Element');
-      return false;
-    }
-    if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-      console.log('You cannot inspect Element');
-      return false;
-    }
-    if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-      console.log('You cannot inspect Element');
-      return false;
-    }
-  } 
-  // prevents right clicking
-  document.addEventListener('contextmenu', e => e.preventDefault());
-  </script>
+                <div class="testimonial-3 d-flex">
+                  <div class="vcard-wrap mr-5">
+                    <img src="images/crop.jpg" alt="Image" class="vcard img-fluid">
+                  </div>
+                  <div class="text">
+                    <h3>Success Plan</h3>
+                    <p class="position">Thoughts</p>
+                    <p>Dont' read the success stories but unsuccessfull stories may that stories give you idea to face the problems in ways</p>
+                  </div>
+                </div>
 
-  
+                <div class="testimonial-3 d-flex">
+                  <div class="vcard-wrap mr-5">
+                    <img src="images/images.jpg" alt="Image" class="vcard img-fluid">
+                  </div>
+                  <div class="text">
+                    <h3>Extraordinary</h3>
+                    <p class="position">Answer by vijay sir</p>
+                    <p>Me: Sr,How to be an Extraordinary man in life? <br>Sir:For being an Extraordinary man be a simple man first of all <br>Dont' know the meaning but can feel it...</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+
+          <div class="col-md-8">
+            
+
+            <div class="row">
+              <div class="col-lg-3 text-center">
+                <span class="text-teal h2 d-block">Hobbies</span>
+                <span>are life</span>
+              </div>
+              <div class="col-lg-3 text-center">
+                <span class="text-yellow h2 d-block">Passion</span>
+                <span>Following</span>
+              </div>
+              <div class="col-lg-3 text-center">
+                <span class="text-success h2 d-block">Over</span>
+                <span>Thinker</span>
+              </div>
+              <div class="col-lg-3 text-center">
+                <span class="text-danger h2 d-block">Natue</span>
+                <span>Phile</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
 
+    <div class="site-section py-5 bg-warning">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12 d-flex">
+          <h2 class="text-white m-0">Bring Fun Life To Your Kids</h2>
+          <a href="#" class="btn btn-primary btn-custom-1 py-3 px-5 ml-auto">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    
 
-</body>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h2 class="footer-heading mb-3">About Us</h2>
+                <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+
+                <h2 class="footer-heading mb-4">Newsletter</h2>
+                <form action="#" class="d-flex" class="subscribe">
+                  <input type="text" class="form-control mr-3" placeholder="Email">
+                  <input type="submit" value="Send" class="btn btn-primary">
+                </form>
+          </div>
+          <div class="col-lg-8 ml-auto">
+            <div class="row">
+              <div class="col-lg-4 ml-auto">
+                <h2 class="footer-heading mb-4">Navigation</h2>
+                <ul class="list-unstyled">
+                  <li><a href="https://atharvathadve.github.io/">About Me</a></li>
+                  <li><a href="#">Pages to view</a></li>
+                  <li><a href="#">Commentbox</a></li>
+                  <li><a href="#">Art</a></li>
+                  <li><a href="#">Writers Blog</a></li>
+                </ul>
+              </div>
+              
+
+              
+              
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> With <i class="icon-heart text-danger" aria-hidden="true"></i>  | This desiend</i> by <a href="https://atharvathadve.github.io/" target="_blank" >MR.A</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.0.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/aos.js"></script>
+
+    <script src="js/main.js"></script>
+
+  </body>
+
 </html>
+
