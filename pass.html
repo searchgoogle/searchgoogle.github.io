@@ -20,23 +20,23 @@
         <hr>
         <label for="pswd" id="passward"> <b> Enter your password: </b></label>
         <input type="password" id="pswd" placeholder="Enter passward" style="padding: 5px 25px;"><br><br>
-        <input type="button" id="button" value="Submit" onclick="checkPswd();" />
+        <input type="reset" id="button" value="Submit" onclick="checkPswd();">
         <hr>
     </form>
     
     
-    <!--Function to check password the already set password is admin-->
+    <!--Function to check password the already set-->
     <script type="text/javascript">
-        function checkPswd() {
-            var confirmPassword = "friends";
-            var password = document.getElementById("pswd").value;
-            if (password == confirmPassword) {
-                 window.location="page.html";
-            }
-            else{
-                alert("Passwords do not match.");
-            }
-        }
+      function checkPswd() {
+          var confirmPassword = "friends";
+          var password = document.getElementById("pswd").value;
+          if (password == confirmPassword) {
+               window.location="page.html";
+          }
+          else{
+              alert("Passwords do not match.");
+          }
+      }
     </script>
 
 <script>
