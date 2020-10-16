@@ -7,11 +7,8 @@
      <title>Document</title>
      <style>
          body{
-             background-color: rgba(25, 208, 214, 0.945);
-             opacity: 0.5;}
-        
-         
-        
+          background-image: linear-gradient(to right, rgb(236, 27, 132),rgba(74, 11, 94, 0.589));
+         }
      </style>
     </head>
     <body>
@@ -28,10 +25,10 @@
     <!--Function to check password the already set-->
     <script type="text/javascript">
       function checkPswd() {
-          var confirmPassword = "bestfriends";
+          var confirmPassword = "friends";
           var password = document.getElementById("pswd").value;
           if (password == confirmPassword) {
-               window.location="comment.html";
+               window.location="page.html";
           }
           else{
               alert("Passwords do not match.");
